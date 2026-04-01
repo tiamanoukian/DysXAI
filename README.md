@@ -156,16 +156,6 @@ class Config:
 4. **Use early stopping**: Prevents overfitting
 5. **Class weights**: Automatically computed for imbalanced data
 
-## 📈 Presentation Tips
-
-When presenting your work:
-
-1. **Start with initialization**: Show data loading and preprocessing
-2. **Compare models**: Run all three models and compare results
-3. **Explainability**: Use `04_explainability.ipynb` to show which features matter
-4. **Visualizations**: Each notebook includes loss curves and confusion matrices
-5. **Feature importance**: Show which handwriting features (velocity, pressure, etc.) are most important
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -206,9 +196,3 @@ Install with:
 pip install torch numpy pandas scikit-learn matplotlib tqdm seaborn
 pip install TSInterpret  # Optional, for explainability
 ```
-
----
-
-**Happy coding! 🚀**
-
-For questions or issues, refer to the individual notebook documentation or check the code comments.
