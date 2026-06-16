@@ -1,0 +1,10 @@
+{
+  "best_epoch": 13,
+  "best_epoch_mean_val_auc": 0.9814814814814815,
+  "xy_filter": "butterworth",
+  "use_age": false,
+  "use_gender": true,
+  "max_epochs": 40,
+  "patience": 5,
+  "min_epochs": 5
+}

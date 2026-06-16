@@ -1,0 +1,8 @@
+{
+  "best_epoch": 14,
+  "best_epoch_mean_val_auc": 0.9805555555555556,
+  "use_late_fusion_age": true,
+  "max_epochs": 40,
+  "patience": 7,
+  "min_epochs": 5
+}

@@ -1,0 +1,10 @@
+{
+  "best_epoch": 12,
+  "best_epoch_mean_val_auc": 0.9814814814814815,
+  "xy_filter": "raw",
+  "use_age": true,
+  "use_gender": false,
+  "max_epochs": 40,
+  "patience": 5,
+  "min_epochs": 5
+}

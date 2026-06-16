@@ -1,0 +1,10 @@
+{
+  "best_epoch": 7,
+  "best_epoch_mean_val_auc": 0.9597777777777778,
+  "xy_filter": "fft",
+  "use_age": false,
+  "use_gender": true,
+  "max_epochs": 40,
+  "patience": 5,
+  "min_epochs": 5
+}
