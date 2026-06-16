@@ -1,15 +1,6 @@
 # DysXAI — Explainable dysgraphia detection from handwriting kinematics
 
 Reproducible deep-learning pipeline for classifying dysgraphia from WACOM tablet pen dynamics, built on the public [Drotár / SciRep dataset](https://www.nature.com/articles/s41598-020-61929-y). The project combines model comparison notebooks, rigorous leakage checks, per-task data splitting, exploratory kinematic analysis, and a **final Task 7 pipeline** with nested cross-validation and multi-layer explainability.
-
-| Document | Audience |
-|----------|----------|
-| **This file** | Project overview, notebooks, dataset tooling, analysis scripts |
-| [`DysXAI_task7/README.md`](DysXAI_task7/README.md) | **Complete guide** to the final Task 7 classifier, CV, and XAI |
-| [`DysXAI_task7/task7_results_summary_for_paper.md`](DysXAI_task7/task7_results_summary_for_paper.md) | Copy-paste results text and tables |
-| [`Report for M1 Internship/`](Report%20for%20M1%20Internship/) | M1 internship report (IEEE Overleaf template + writing guide) |
-| [`DysXAI_Research_Project_Report/`](DysXAI_Research_Project_Report/) | NeurIPS-style research paper draft (separate from internship report) |
-
 ---
 
 ## Project structure
@@ -53,9 +44,7 @@ DysXAI/
 ├── dataSciRep_public/                 ← Raw dataset (unzip before use)
 ├── data2_SciRep_pub.xlsx              ← Subject metadata
 │
-├── Report for M1 Internship/          ← M1 internship LaTeX report
-└── DysXAI_Research_Project_Report/    ← Research paper draft
-```
+
 
 ---
 
@@ -91,11 +80,10 @@ Always run **`00_initialization.ipynb`** first. Then run model notebooks in any 
 | `07_cv_evaluation.ipynb` | — | Subject-stratified K-fold AUC |
 | `08_analyze_true_duration.ipynb` | — | True writing duration vs label |
 
-Each notebook has a `.py` mirror (`00_initialization.py`, etc.) for non-Jupyter runs.
 
 ### 3. Final Task 7 pipeline (phase 2)
 
-All classification, nested CV, demographic ablation, and publication XAI live in **`DysXAI_task7/`**.
+All classification, nested CV, demographic ablation, and XAI live in **`DysXAI_task7/`**.
 
 ```bash
 # Primary evaluation
@@ -188,19 +176,6 @@ The final deliverable classifies dysgraphia from **Task 7 (*hračkárstvo*)** on
 - **Best OOF AUC:** 0.955 (kinematics only, FFT)
 - **XAI:** permutation ablation, bootstrap critical importance, global + local DeepSHAP, directional velocity analysis
 
-Do not duplicate run instructions here — see **[`DysXAI_task7/README.md`](DysXAI_task7/README.md)**.
-
----
-
-## Reports
-
-| Folder | Format | Use |
-|--------|--------|-----|
-| [`Report for M1 Internship/`](Report%20for%20M1%20Internship/) | IEEE `bare_jrnl.tex` | **M1 internship report** — see `SECTION_GUIDE.md` |
-| [`DysXAI_Research_Project_Report/`](DysXAI_Research_Project_Report/) | NeurIPS `neurips_2026.tex` | Research paper / Master project write-up |
-
-The internship report should emphasize your 3-month progression (notebooks → Task 7 → XAI). The research draft is a separate, submission-style document.
-
 ---
 
 ## Configuration
@@ -242,65 +217,6 @@ shap              # Task 7 DeepSHAP only
 TSInterpret       # optional, notebook 05
 ```
 
-<<<<<<< HEAD
-### Data Splitting
-- `subject_independent_split(meta_df, train_ratio, random_state)`: Split by subjects (no leakage!)
-
-## 🎯 Best Practices
-
-1. **Always run initialization first**: `00_initialization.ipynb` must be run before any model training
-2. **Subject-independent splits**: Critical for avoiding data leakage
-3. **Fit scaler on training data only**: Never fit on test data!
-4. **Use early stopping**: Prevents overfitting
-5. **Class weights**: Automatically computed for imbalanced data
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**"NameError: name 'Config' is not defined"**
-- Solution: Run `00_initialization.ipynb` first
-
-**"FileNotFoundError: Could not find raw file"**
-- Solution: Check `Config.DATA_ROOT` path and ensure data is unzipped
-
-**"CUDA out of memory"**
-- Solution: Reduce `BATCH_SIZE` in Config class
-
-**"No module named 'TSInterpret'"**
-- Solution: Install with `pip install TSInterpret` (see `04_explainability.ipynb`)
-
-## 📝 Notes
-
-- All notebooks are designed to be run independently (after initialization)
-- Functions are separated into different cells for clarity
-- Markdown cells provide explanations and guidelines
-- Code is well-commented for presentation purposes
-
-## 🔗 Dependencies
-
-Required packages:
-- torch
-- numpy
-- pandas
-- scikit-learn
-- matplotlib
-- tqdm
-- seaborn (for visualizations)
-- TSInterpret (optional, for explainability)
-
-Install with:
-=======
->>>>>>> fa3b6e8 (Major pipeline update: Add nested OOF CV, demographic ablation, explainability scripts, and refine repository structure)
-```bash
-pip install torch numpy pandas scikit-learn scipy matplotlib seaborn tqdm openpyxl shap
-pip install TSInterpret   # optional
-```
-<<<<<<< HEAD
-=======
-
----
-
 ## Best practices
 
 1. **Run `00_initialization.ipynb` (or split tasks) before training.**
@@ -308,18 +224,6 @@ pip install TSInterpret   # optional
 3. **Fit scalers on training data only.**
 4. **Prefer OOF metrics** (Task 7) over single holdout splits for reporting.
 5. **Treat FFT cutoff as a hyperparameter** — do not assume 12 Hz is universally optimal.
-
----
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| `Config` / `meta_df` not defined | Run `00_initialization.ipynb` |
-| `FileNotFoundError` for `.svc` | Check `Config.DATA_ROOT`, unzip dataset, run `dysxai_task_splitter.py` |
-| CUDA OOM | Lower `BATCH_SIZE` in `Config` or Task 7 `train_ab_test.py` |
-| Task 7 empty cohort | Confirm `dysxai_tasks_split/task_7_hrackarstvo/` exists |
-| SHAP import error | `pip install shap` |
 
 ---
 
