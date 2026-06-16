@@ -4,7 +4,6 @@ Final research pipeline for the DysXAI project: classify dysgraphia from tablet 
 
 **Cohort:** 120 subjects (57 dysgraphic, 63 control) · **Clip:** one `.svc` per subject in `../dysxai_tasks_split/task_7_hrackarstvo/`
 
-For copy-paste results text and slide bullets, see [`task7_results_summary_for_paper.md`](task7_results_summary_for_paper.md).
 
 ---
 
@@ -341,8 +340,4 @@ OpenPyXL is required for metadata Excel I/O (via `dysxai_init`).
 
 ---
 
-## Related documentation
 
-- Parent repo overview and dataset tooling: [`../README.md`](../README.md)
-- M1 internship report (separate from the NeurIPS research draft): [`../Report for M1 Internship/`](../Report%20for%20M1%20Internship/)
-- Research paper draft (do not confuse with internship report): [`../DysXAI_Research_Project_Report/`](../DysXAI_Research_Project_Report/)
