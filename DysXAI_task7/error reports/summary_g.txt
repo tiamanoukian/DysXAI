@@ -1,0 +1,16 @@
+Scenario: Baseline + Gender
+Filter: Tuned FFT (ablation) | Age=OFF | Gender=ON
+Source CSV: oof_predictions_fft_baseline_plus_gender.csv
+N=120 AUC=0.952938 Acc=0.883333 Sens=0.877193 Spec=0.888889
+TN=56 FP=7 FN=7 TP=50
+Largest group: Male, age 15 - 3 False Negatives (14 total errors)
+Age-gender error counts:
+  Male, age 15: 3 False Negative
+  Male, age 12: 2 False Positive
+  Male, age 13: 2 False Negative
+  Male, age 15: 2 False Positive
+  Female, age 8: 1 False Positive
+  Male, age 8: 1 False Positive
+  Female, age 10: 1 False Negative
+  Male, age 10: 1 False Negative
+  Female, age 13: 1 False Positive

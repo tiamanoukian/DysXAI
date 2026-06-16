@@ -1,0 +1,5 @@
+scenario,test_name,statistic,p_value,n,note
+Baseline (Kinematics Only),chi2_gender_false_negative_vs_correct,1.4126375786163523,0.23461903324067476,115,2x2 chi-square on Male/Female counts.
+Baseline (Kinematics Only),chi2_gender_false_positive_vs_correct,0.08275960005314903,0.7735919434372391,111,2x2 chi-square on Male/Female counts.
+Baseline (Kinematics Only),mannwhitney_age_false_negative_vs_correct,603.5,0.18511148272649147,115,Two-sided Mann-Whitney U (error group vs Correct).
+Baseline (Kinematics Only),mannwhitney_age_false_positive_vs_correct,257.5,0.919927042083598,111,Two-sided Mann-Whitney U (error group vs Correct).

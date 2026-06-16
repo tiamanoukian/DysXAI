@@ -1,0 +1,5 @@
+scenario,filter,use_age,use_gender,pred_csv,n,tn,fp,fn,tp,accuracy,auc,sensitivity,specificity
+Baseline (Kinematics Only),Tuned FFT (ablation),False,False,oof_predictions_fft_baseline_kinematics_only.csv,120,58,5,9,48,0.8833333333333333,0.9554441659704818,0.8421052631578947,0.9206349206349206
+Baseline + Age,Tuned FFT (ablation),True,False,oof_predictions_fft_baseline_plus_age.csv,120,59,4,10,47,0.8833333333333333,0.9423558897243107,0.8245614035087719,0.9365079365079365
+Baseline + Gender,Tuned FFT (ablation),False,True,oof_predictions_fft_baseline_plus_gender.csv,120,56,7,7,50,0.8833333333333333,0.9529379003063213,0.8771929824561403,0.8888888888888888
+Baseline + Age + Gender,Tuned FFT (ablation),True,True,oof_predictions_fft_baseline_plus_age_plus_gender.csv,120,56,7,7,50,0.8833333333333333,0.9440267335004175,0.8771929824561403,0.8888888888888888

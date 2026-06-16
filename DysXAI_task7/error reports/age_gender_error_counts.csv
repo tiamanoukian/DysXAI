@@ -1,0 +1,11 @@
+gender_label,age_int,demo_label,error_type,count
+Male,15,"Male, age 15",False Negative,3
+Male,13,"Male, age 13",False Negative,2
+Male,15,"Male, age 15",False Positive,2
+Female,8,"Female, age 8",False Positive,1
+Male,8,"Male, age 8",False Positive,1
+Female,10,"Female, age 10",False Negative,1
+Male,10,"Male, age 10",False Negative,1
+Male,11,"Male, age 11",False Negative,1
+Male,12,"Male, age 12",False Positive,1
+Male,14,"Male, age 14",False Negative,1

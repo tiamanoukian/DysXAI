@@ -1,0 +1,17 @@
+Scenario: Baseline (Kinematics Only)
+Filter: Tuned FFT (ablation) | Age=OFF | Gender=OFF
+Source CSV: oof_predictions_fft_baseline_kinematics_only.csv
+N=120 AUC=0.955444 Acc=0.883333 Sens=0.842105 Spec=0.920635
+TN=58 FP=5 FN=9 TP=48
+Largest group: Male, age 15 - 3 False Negatives (14 total errors)
+Age-gender error counts:
+  Male, age 15: 3 False Negative
+  Male, age 13: 2 False Negative
+  Male, age 15: 2 False Positive
+  Female, age 8: 1 False Positive
+  Male, age 8: 1 False Positive
+  Female, age 10: 1 False Negative
+  Male, age 10: 1 False Negative
+  Male, age 11: 1 False Negative
+  Male, age 12: 1 False Positive
+  Male, age 14: 1 False Negative
