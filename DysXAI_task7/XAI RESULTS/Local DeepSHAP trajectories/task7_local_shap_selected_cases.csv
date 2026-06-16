@@ -1,0 +1,9 @@
+grid_row,grid_col,case_key,example_rank,subject_id,true_label,pred_prob
+0,0,extreme_tp,1,8,1,1.0
+0,1,extreme_tn,1,60,0,6.337865698924361e-08
+0,2,extreme_fp,1,184,0,0.9889376163482666
+0,3,extreme_fn,1,48,1,0.00350445904769
+1,0,extreme_tp,2,38,1,0.9999998807907104
+1,1,extreme_tn,2,84,0,5.891398359381128e-06
+1,2,extreme_fp,2,163,0,0.7974808216094971
+1,3,extreme_fn,2,92,1,0.0055018491111695
