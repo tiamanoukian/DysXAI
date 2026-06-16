@@ -1,0 +1,21 @@
+configuration,xy_filter,use_age,use_gender,outer_fold,selected_filter,selected_freq_hz,selected_epoch,inner_best_mean_auc,n_train,n_test,checkpoint_file
+Baseline (Kinematics Only),fft,0,0,1,fft_12,12.0,8,,96,24,oof_fft_12_no_age_no_gender_fold01.pt
+Baseline (Kinematics Only),fft,0,0,2,fft_8,8.0,40,,96,24,oof_fft_8_no_age_no_gender_fold02.pt
+Baseline (Kinematics Only),fft,0,0,3,fft_12,12.0,36,,96,24,oof_fft_12_no_age_no_gender_fold03.pt
+Baseline (Kinematics Only),fft,0,0,4,fft_8,8.0,34,,96,24,oof_fft_8_no_age_no_gender_fold04.pt
+Baseline (Kinematics Only),fft,0,0,5,fft_15,15.0,36,,96,24,oof_fft_15_no_age_no_gender_fold05.pt
+Baseline + Age,fft,1,0,1,fft_10,10.0,5,,96,24,oof_fft_10_age_no_gender_fold01.pt
+Baseline + Age,fft,1,0,2,fft_8,8.0,19,,96,24,oof_fft_8_age_no_gender_fold02.pt
+Baseline + Age,fft,1,0,3,fft_12,12.0,16,,96,24,oof_fft_12_age_no_gender_fold03.pt
+Baseline + Age,fft,1,0,4,fft_15,15.0,32,,96,24,oof_fft_15_age_no_gender_fold04.pt
+Baseline + Age,fft,1,0,5,fft_8,8.0,32,,96,24,oof_fft_8_age_no_gender_fold05.pt
+Baseline + Age + Gender,fft,1,1,1,fft_10,10.0,8,,96,24,oof_fft_10_age_gender_fold01.pt
+Baseline + Age + Gender,fft,1,1,2,fft_10,10.0,40,,96,24,oof_fft_10_age_gender_fold02.pt
+Baseline + Age + Gender,fft,1,1,3,fft_8,8.0,11,,96,24,oof_fft_8_age_gender_fold03.pt
+Baseline + Age + Gender,fft,1,1,4,fft_12,12.0,12,,96,24,oof_fft_12_age_gender_fold04.pt
+Baseline + Age + Gender,fft,1,1,5,fft_12,12.0,15,,96,24,oof_fft_12_age_gender_fold05.pt
+Baseline + Gender,fft,0,1,1,fft_8,8.0,7,,96,24,oof_fft_8_no_age_gender_fold01.pt
+Baseline + Gender,fft,0,1,2,fft_15,15.0,22,,96,24,oof_fft_15_no_age_gender_fold02.pt
+Baseline + Gender,fft,0,1,3,fft_10,10.0,8,,96,24,oof_fft_10_no_age_gender_fold03.pt
+Baseline + Gender,fft,0,1,4,fft_12,12.0,15,,96,24,oof_fft_12_no_age_gender_fold04.pt
+Baseline + Gender,fft,0,1,5,fft_10,10.0,40,,96,24,oof_fft_10_no_age_gender_fold05.pt

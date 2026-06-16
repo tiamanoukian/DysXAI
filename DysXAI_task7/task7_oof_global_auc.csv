@@ -1,0 +1,4 @@
+xy_filter,filter_label,global_oof_auc,n_predictions
+raw,Raw (No Filter),0.969368,120
+butterworth,12 Hz Butterworth,0.948482,120
+fft,12 Hz FFT,0.954887,120

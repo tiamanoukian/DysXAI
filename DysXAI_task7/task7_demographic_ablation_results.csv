@@ -1,0 +1,5 @@
+configuration,auc,accuracy,sensitivity,specificity,n
+Baseline (Kinematics Only),0.955444,0.883333,0.842105,0.920635,120
+Baseline + Age,0.942356,0.883333,0.824561,0.936508,120
+Baseline + Gender,0.952938,0.883333,0.877193,0.888889,120
+Baseline + Age + Gender,0.944027,0.883333,0.877193,0.888889,120

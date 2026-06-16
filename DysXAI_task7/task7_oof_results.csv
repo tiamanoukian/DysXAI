@@ -1,0 +1,4 @@
+xy_filter,filter_label,n,n_dysgraphic,n_control,auc,accuracy,sensitivity,specificity
+raw,Raw (No Filter),120,57,63,0.945976,0.891667,0.842105,0.936508
+butterworth,12 Hz Butterworth,120,57,63,0.946533,0.908333,0.859649,0.952381
+fft,12 Hz FFT,120,57,63,0.937900,0.933333,0.877193,0.984127
