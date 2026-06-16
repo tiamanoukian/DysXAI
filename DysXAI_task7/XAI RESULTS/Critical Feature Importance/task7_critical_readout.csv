@@ -1,0 +1,4 @@
+section,value
+robust_positive_auc,"Vy, Y, Pressure, Vx, Gender"
+uncertain_auc,"X, Tilt, Age, Ay, Jx"
+data_scope,5-fold OOF outer test only; each subject tested once across folds.
