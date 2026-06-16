@@ -1,0 +1,6 @@
+Global DeepSHAP — full kinematics (directional velocity, acc, jerk)
+
+Pos/Neg rows pool SHAP over timesteps where the model channel is >0 or <0. Vx/Vy color = clinical mean speed
+(FFT 12 Hz, pen-on); acc/jerk color = mean |z-score| on those timesteps; X–PenStatus = mean-pooled model
+z-score. Colors are cohort z-scored per row for one shared scale. Positive SHAP → higher dysgraphic logit.
+Age and Gender are shown in a separate demographics panel.

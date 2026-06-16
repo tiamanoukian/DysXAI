@@ -1,0 +1,3 @@
+Global DeepSHAP — full kinematics (directional velocity, acc, jerk)
+
+Same full kinematic SHAP as the feature-value panel. Blue = Control, red = Dysgraphic.
